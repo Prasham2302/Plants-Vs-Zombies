@@ -1,0 +1,7 @@
+
+ 
+.mainFxmlClass {
+ -fx-background-image: url('main_background.png');
+ -fx-background-size: 100% 100%;
+
+}

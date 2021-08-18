@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@Home.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plantsvszombies.StartController">
+   <children>
+      <ImageView fx:id="clickStart" fitHeight="78.0" fitWidth="258.0" layoutX="152.0" layoutY="293.0" onMouseClicked="#LoginUser" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@click_to_start.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

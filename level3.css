@@ -1,0 +1,8 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+-fx-background-image: url('level_3.jpg');
+ -fx-background-size: 100% 100%;
+}

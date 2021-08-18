@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="plantsvszombies.Level3Controller">
+    <stylesheets>
+        <URL value="@level3.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="34.0" fitWidth="79.0" layoutX="173.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ShovelBack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zom3" fitHeight="91.0" fitWidth="61.0" layoutX="407.0" layoutY="85.0" onMouseClicked="#zom3_move" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@zombie_normal.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="25.0" layoutX="148.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sun.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="42.0" layoutX="106.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sun_flower.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="61.0" layoutX="179.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" rotate="-35.0">
+         <image>
+            <Image url="@Shovel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="169.0" layoutX="343.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FlagMeterEmpty.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="8.0" layoutY="14.0" prefHeight="289.0" prefWidth="70.0" translateX="-6.0" translateY="-8.0">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Card_Peashooter_final.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="72.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Card_SunFlower_final.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Card_Wall-Nut.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Card_CherryBomb.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox fx:id="sunflower1" layoutX="60.0" layoutY="47.0" onMouseClicked="#get_sun" prefHeight="327.0" prefWidth="79.0" spacing="20">
+         <children>
+            <ImageView id="LM1" fitHeight="84.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lawnmowerfinal.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lawnmowerfinal.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lawnmowerfinal.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lawnmowerfinal.png" />
+               </image>
+            </ImageView>
+            <ImageView id="LM1" fitHeight="84.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@lawnmowerfinal.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <ImageView fx:id="zom2" fitHeight="91.0" fitWidth="61.0" layoutX="423.0" layoutY="178.0" onMouseClicked="#zom2_move" pickOnBounds="true" preserveRatio="true" translateX="-10.0" AnchorPane.bottomAnchor="131.0" AnchorPane.leftAnchor="423.0" AnchorPane.rightAnchor="120.29999923706055" AnchorPane.topAnchor="178.0">
+         <image>
+            <Image url="@zombie_normal.gif" />
+         </image>
+      </ImageView>
+      <ImageView id="zom1" fx:id="zom1" fitHeight="91.0" fitWidth="61.0" layoutX="413.0" layoutY="283.0" onMouseClicked="#zom_move" onMousePressed="#zom_move" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@zombie_normal.gif" />
+         </image>
+      </ImageView>
+      <Button blendMode="GREEN" layoutX="501.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeScreenButtonPushed" text="GAME MENU" />
+      <ImageView fitHeight="34.0" fitWidth="92.0" layoutX="70.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SunBack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="shooter1" fitHeight="53.0" fitWidth="48.0" layoutX="136.0" layoutY="116.0" onMouseClicked="#pea_shoot" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@peashooter.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pea1" fitHeight="3.0" fitWidth="5.0" layoutX="168.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" x="4.0" y="7.0">
+         <image>
+            <Image url="@PB0_L.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pea11" fitHeight="3.0" fitWidth="5.0" layoutX="164.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" x="8.0" y="7.0">
+         <image>
+            <Image url="@PB0_L.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pea12" fitHeight="3.0" fitWidth="5.0" layoutX="164.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" x="8.0" y="6.0">
+         <image>
+            <Image url="@PB0_L.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zom_head" fitHeight="113.0" fitWidth="93.0" layoutX="441.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" x="7.0" y="-4.0">
+         <image>
+            <Image url="@ZombieHead_0.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
